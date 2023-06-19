@@ -14,9 +14,9 @@
         <input type="number" id="price" name="price" placeholder="Product Price">
         <label for="catergory">Catergory</label>
         <select name="catergory" id="catergory">
-            <option value="fruit">Fruit</option>
-            <option value="vegetable">Vegetable</option>
-            <option value="dairy">Dairy</option>
+            <% for(let catergory of catergories){ %>
+                <option value="<%=catergory%>"><%=catergory%></option>    
+            <%}%>
         </select>
         <button type="submit">Submit</button>
     </form>
